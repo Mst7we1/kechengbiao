@@ -1,0 +1,16 @@
+{
+    "id": "sq-timetable",
+    "name": "SqTimetable-好看简洁且支持自定义的课表插件",
+    "displayName": "SqTimetable-好看简洁且支持自定义的课表插件",
+    "version": "1.0.0",
+    "description": "可自定义课程的颜色显示数组、每节课的上下课时间、背景图片，可根据课程节数以及设备参数进行高度及宽度的自适应。",
+    "keywords": [
+        "课程表,作息表"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    }
+}
