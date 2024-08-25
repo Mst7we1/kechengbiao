@@ -5,7 +5,7 @@
       <text class="title">关于此软件</text>
     </view>
     <view class="content">
-      <text class="description">这是一个及其简约的课程表软件，基于uni-app框架开发。</text>
+      <text class="description">这是一个及其简约的课程表软件，基于uni-app框架开发。bug反馈可发邮件或者线下告知</text>
       <view class="author-info">
         <view class="info-row">
           <text class="author-name">作者: 张鹏宇</text>
@@ -16,6 +16,12 @@
         <view class="info-row">
           <text class="author-email">反馈邮箱: wwei50057@gmail.com</text>
         </view>
+		<view class="info-row">
+		  <text class="author-github">国内开源地址：<a :href="gitee" target="_blank">gitee(首选:点击访问)</a></text>
+		</view>
+		<view class="info-row">
+		  <text class="author-github">海外开源地址：<a :href="github" target="_blank">github(备选:点击访问)</a></text>
+		</view>
         <view class="info-row">
           <text class="author-github">GitHub: <a :href="githubUrl" target="_blank">Mst7we1</a></text>
         </view>
@@ -35,10 +41,13 @@ export default {
   data() {
     return {
       logoUrl: '../../static/logo.png',
-      githubUrl: 'https://github.com/Mst7we1'
+      githubUrl: 'https://github.com/Mst7we1',
+	  github: 'https://github.com/Mst7we1/kechengbiao',
+	  gitee: 'https://gitee.com/zpyuu/kechengbiao',
     };
   }
 };
+
 </script>
 
 <style scoped>

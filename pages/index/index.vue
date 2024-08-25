@@ -5,8 +5,8 @@
       :image="image"
       :timeColor="timeColor"
       :courseList="courseList"
-      :showNotWeek="true"
-      :week="12"
+      :showNotWeek="false"
+      :week="1"
       @click="getCourse"
     >
     </SqTimetable>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-	
 import SqTimetable from "../../components/sq-timetable/sq-timetable.vue";
 export default {
   components: {
@@ -23,20 +22,18 @@ export default {
   data() {
     return {
       time: [
-        ["8:20", "9:00"],
-        ["9:05", "9:45"],
-        ["10:00", "10:40"],
-        ["10:45", "11:25"],
-        ["11:30", "12:10"],
-        ["13:30", "14:10"],
-        ["14:15", "14:55"],
-        ["15:10", "15:50"],
-        ["15:55", "16:35"],
-        ["16:40", "17:20"],
-        ["18:00", "18:40"],
-        ["18:45", "19:25"],
-        ["19:40", "20:20"],
-        ["20:25", "21:05"],
+        ["8:30", ""],
+        ["", "10:10"],
+        ["10:20", ""],
+        ["", "12:00"],
+        ["13:30", ""],
+        ["", "15:10"],
+        ["15:20", ""],
+        ["", "17:00"],
+        ["17:40", ""],
+        ["", "19:20"],
+        ["19:30", ""],
+        ["", "21:10"],
       ],
       image: null,
       colorArrays: [
@@ -165,14 +162,14 @@ export default {
         },
         {
           id: 1011,
-          begin: 9,
-          end: 10,
-          week: 4,
-          name: "形势与政策",
-          week_begin: 1,
-          week_end: 4,
-          place: "阶梯教室1",
-          teacher: "王霄云",
+          begin: 1,
+          end: 4,
+          week: 1,
+          name: "前端技术实训",
+          week_begin: 17,
+          week_end: 18,
+          place: "西201",
+          teacher: "蒋漪涟",
         },
         {
           id: 1012,
@@ -207,6 +204,105 @@ export default {
           place: "南215",
           teacher: "杨秋叶",
         },
+        {
+          id: 1015,
+          begin: 9,
+          end: 12,
+          week: 1,
+          name: "前端技术实训",
+          week_begin: 8,
+          week_end: 8,
+          place: "南215",
+          teacher: "刘晓丹",
+        },
+        {
+          id: 1015,
+          begin: 9,
+          end: 12,
+          week: 2,
+          name: "前端技术实训",
+          week_begin: 8,
+          week_end: 8,
+          place: "南215",
+          teacher: "刘晓丹",
+        },
+        {
+          id: 1015,
+          begin: 9,
+          end: 12,
+          week: 3,
+          name: "前端技术实训",
+          week_begin: 8,
+          week_end: 8,
+          place: "南215",
+          teacher: "刘晓丹",
+        },
+        {
+          id: 1015,
+          begin: 9,
+          end: 12,
+          week: 4,
+          name: "前端技术实训",
+          week_begin: 8,
+          week_end: 8,
+          place: "南215",
+          teacher: "刘晓丹",
+        },
+        {
+          id: 1015,
+          begin: 9,
+          end: 12,
+          week: 5,
+          name: "前端技术实训",
+          week_begin: 8,
+          week_end: 8,
+          place: "南215",
+          teacher: "刘晓丹",
+        },
+        {
+          id: 1011,
+          begin: 5,
+          end: 8,
+          week: 2,
+          name: "前端技术实训",
+          week_begin: 17,
+          week_end: 18,
+          place: "西201",
+          teacher: "蒋漪涟",
+        },
+        {
+          id: 1011,
+          begin: 1,
+          end: 4,
+          week: 3,
+          name: "前端技术实训",
+          week_begin: 17,
+          week_end: 18,
+          place: "西201",
+          teacher: "蒋漪涟",
+        },
+        {
+          id: 1011,
+          begin: 5,
+          end: 8,
+          week: 4,
+          name: "前端技术实训",
+          week_begin: 17,
+          week_end: 18,
+          place: "西201",
+          teacher: "蒋漪涟",
+        },
+        {
+          id: 1011,
+          begin: 1,
+          end: 4,
+          week: 5,
+          name: "前端技术实训",
+          week_begin: 17,
+          week_end: 18,
+          place: "西201",
+          teacher: "蒋漪涟",
+        },
       ],
     };
   },
@@ -217,10 +313,6 @@ export default {
     },
   },
 };
-
-
 </script>
-
-
 
 <style></style>
